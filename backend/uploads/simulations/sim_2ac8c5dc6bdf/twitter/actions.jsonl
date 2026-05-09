@@ -1,0 +1,54 @@
+{"timestamp": "2026-05-08T18:29:02.225364", "event_type": "simulation_start", "platform": "twitter", "total_rounds": 48, "agents_count": 6}
+{"round": 0, "timestamp": "2026-05-08T18:29:02.227408", "event_type": "round_start", "simulated_hour": 0}
+{"round": 0, "timestamp": "2026-05-08T18:29:02.229047", "agent_id": 0, "agent_name": "Analyst 1", "action_type": "CREATE_POST", "action_args": {"content": "почему вот так в природе происходит?"}, "result": null, "success": true}
+{"round": 0, "timestamp": "2026-05-08T18:29:02.367943", "event_type": "round_end", "actions_count": 1}
+{"round": 1, "timestamp": "2026-05-08T18:29:02.370272", "event_type": "round_start", "simulated_hour": 0}
+{"round": 1, "timestamp": "2026-05-08T18:29:02.372193", "event_type": "round_end", "actions_count": 0}
+{"round": 2, "timestamp": "2026-05-08T18:29:02.374238", "event_type": "round_start", "simulated_hour": 1}
+{"round": 2, "timestamp": "2026-05-08T18:29:02.375810", "event_type": "round_end", "actions_count": 0}
+{"round": 3, "timestamp": "2026-05-08T18:29:02.377403", "event_type": "round_start", "simulated_hour": 2}
+{"round": 3, "timestamp": "2026-05-08T18:29:02.379057", "event_type": "round_end", "actions_count": 0}
+{"round": 4, "timestamp": "2026-05-08T18:29:02.380730", "event_type": "round_start", "simulated_hour": 3}
+{"round": 4, "timestamp": "2026-05-08T18:29:02.382418", "event_type": "round_end", "actions_count": 0}
+{"round": 5, "timestamp": "2026-05-08T18:29:02.384084", "event_type": "round_start", "simulated_hour": 4}
+{"round": 5, "timestamp": "2026-05-08T18:29:02.385913", "event_type": "round_end", "actions_count": 0}
+{"round": 6, "timestamp": "2026-05-08T18:29:02.388182", "event_type": "round_start", "simulated_hour": 5}
+{"round": 6, "timestamp": "2026-05-08T18:29:02.390416", "event_type": "round_end", "actions_count": 0}
+{"round": 7, "timestamp": "2026-05-08T18:29:02.392073", "event_type": "round_start", "simulated_hour": 6}
+{"round": 7, "timestamp": "2026-05-08T18:29:02.393601", "event_type": "round_end", "actions_count": 0}
+{"round": 8, "timestamp": "2026-05-08T18:29:02.395149", "event_type": "round_start", "simulated_hour": 7}
+{"round": 8, "timestamp": "2026-05-08T18:29:02.396630", "event_type": "round_end", "actions_count": 0}
+{"round": 9, "timestamp": "2026-05-08T18:29:02.398243", "event_type": "round_start", "simulated_hour": 8}
+{"round": 9, "timestamp": "2026-05-08T18:32:15.435617", "agent_id": 0, "agent_name": "Analyst 1", "action_type": "CREATE_POST", "action_args": {"content": "почему вот так в природе происходит?", "post_id": 1}, "result": null, "success": true}
+{"round": 9, "timestamp": "2026-05-08T18:32:15.437542", "event_type": "round_end", "actions_count": 1}
+{"round": 10, "timestamp": "2026-05-08T18:32:15.439308", "event_type": "round_start", "simulated_hour": 9}
+{"round": 10, "timestamp": "2026-05-08T18:32:16.029740", "event_type": "round_end", "actions_count": 0}
+{"round": 11, "timestamp": "2026-05-08T18:32:16.031605", "event_type": "round_start", "simulated_hour": 10}
+{"round": 11, "timestamp": "2026-05-08T18:32:16.557580", "event_type": "round_end", "actions_count": 0}
+{"round": 12, "timestamp": "2026-05-08T18:32:16.559903", "event_type": "round_start", "simulated_hour": 11}
+{"round": 12, "timestamp": "2026-05-08T18:32:17.105924", "event_type": "round_end", "actions_count": 0}
+{"round": 13, "timestamp": "2026-05-08T18:32:17.108179", "event_type": "round_start", "simulated_hour": 12}
+{"round": 13, "timestamp": "2026-05-08T18:32:18.236899", "event_type": "round_end", "actions_count": 0}
+{"round": 14, "timestamp": "2026-05-08T18:32:18.239213", "event_type": "round_start", "simulated_hour": 13}
+{"round": 14, "timestamp": "2026-05-08T18:32:18.789319", "event_type": "round_end", "actions_count": 0}
+{"round": 15, "timestamp": "2026-05-08T18:32:18.791259", "event_type": "round_start", "simulated_hour": 14}
+{"round": 15, "timestamp": "2026-05-08T18:32:19.353385", "event_type": "round_end", "actions_count": 0}
+{"round": 16, "timestamp": "2026-05-08T18:32:19.355510", "event_type": "round_start", "simulated_hour": 15}
+{"round": 16, "timestamp": "2026-05-08T18:32:19.937749", "event_type": "round_end", "actions_count": 0}
+{"round": 17, "timestamp": "2026-05-08T18:32:19.939652", "event_type": "round_start", "simulated_hour": 16}
+{"round": 17, "timestamp": "2026-05-08T18:32:20.486298", "event_type": "round_end", "actions_count": 0}
+{"round": 18, "timestamp": "2026-05-08T18:32:20.488445", "event_type": "round_start", "simulated_hour": 17}
+{"round": 18, "timestamp": "2026-05-08T18:32:21.063384", "event_type": "round_end", "actions_count": 0}
+{"round": 19, "timestamp": "2026-05-08T18:32:21.065164", "event_type": "round_start", "simulated_hour": 18}
+{"round": 19, "timestamp": "2026-05-08T18:32:21.604483", "event_type": "round_end", "actions_count": 0}
+{"round": 20, "timestamp": "2026-05-08T18:32:21.606621", "event_type": "round_start", "simulated_hour": 19}
+{"round": 20, "timestamp": "2026-05-08T18:32:22.234529", "event_type": "round_end", "actions_count": 0}
+{"round": 21, "timestamp": "2026-05-08T18:32:22.238477", "event_type": "round_start", "simulated_hour": 20}
+{"round": 21, "timestamp": "2026-05-08T18:32:24.218514", "event_type": "round_end", "actions_count": 0}
+{"round": 22, "timestamp": "2026-05-08T18:32:24.221807", "event_type": "round_start", "simulated_hour": 21}
+{"round": 22, "timestamp": "2026-05-08T18:32:24.921870", "event_type": "round_end", "actions_count": 0}
+{"round": 23, "timestamp": "2026-05-08T18:32:24.927291", "event_type": "round_start", "simulated_hour": 22}
+{"round": 23, "timestamp": "2026-05-08T18:32:25.501312", "event_type": "round_end", "actions_count": 0}
+{"round": 24, "timestamp": "2026-05-08T18:32:25.502797", "event_type": "round_start", "simulated_hour": 23}
+{"round": 24, "timestamp": "2026-05-08T18:32:25.504182", "event_type": "round_end", "actions_count": 0}
+{"timestamp": "2026-05-08T18:32:25.505466", "event_type": "simulation_end", "platform": "twitter", "total_rounds": 24, "total_actions": 2}

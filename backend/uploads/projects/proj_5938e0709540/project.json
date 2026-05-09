@@ -1,0 +1,268 @@
+{
+  "project_id": "proj_5938e0709540",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-09T18:27:11.684980",
+  "updated_at": "2026-05-09T18:40:40.266456",
+  "files": [
+    {
+      "filename": "Simpson-Protocol-BOOK-2021.pdf",
+      "size": 838246
+    }
+  ],
+  "total_text_length": 64458,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Hypnotist",
+        "description": "A professional who practices hypnosis",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the hypnotist"
+          },
+          {
+            "name": "specialization",
+            "type": "text",
+            "description": "The area of specialization of the hypnotist"
+          }
+        ],
+        "examples": [
+          "Ines Simpson",
+          "Dave Elman"
+        ]
+      },
+      {
+        "name": "Client",
+        "description": "An individual who receives hypnosis services",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the client"
+          },
+          {
+            "name": "issue",
+            "type": "text",
+            "description": "The issue the client is seeking help for"
+          }
+        ],
+        "examples": [
+          "Joni Wilay-Zukowski",
+          "Gabe"
+        ]
+      },
+      {
+        "name": "Trainer",
+        "description": "A professional who teaches hypnosis techniques",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the trainer"
+          },
+          {
+            "name": "expertise",
+            "type": "text",
+            "description": "The area of expertise of the trainer"
+          }
+        ],
+        "examples": [
+          "Jerry Kein",
+          "Hansruedi Wipf"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "An entity that provides hypnosis services or training",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "The name of the organization"
+          },
+          {
+            "name": "location",
+            "type": "text",
+            "description": "The location of the organization"
+          }
+        ],
+        "examples": [
+          "OMNI Hypnosis Training Center",
+          "Simpson Protocol"
+        ]
+      },
+      {
+        "name": "Researcher",
+        "description": "An individual who studies hypnosis and its effects",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the researcher"
+          },
+          {
+            "name": "field_of_study",
+            "type": "text",
+            "description": "The field of study of the researcher"
+          }
+        ],
+        "examples": [
+          "Franz Mesmer",
+          "James Braid"
+        ]
+      },
+      {
+        "name": "Student",
+        "description": "An individual who is learning hypnosis techniques",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the student"
+          },
+          {
+            "name": "level_of_study",
+            "type": "text",
+            "description": "The level of study of the student"
+          }
+        ],
+        "examples": [
+          "Beryl Comar",
+          "Mike Hulme"
+        ]
+      },
+      {
+        "name": "Practitioner",
+        "description": "A professional who uses hypnosis in their work",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the practitioner"
+          },
+          {
+            "name": "field_of_practice",
+            "type": "text",
+            "description": "The field of practice of the practitioner"
+          }
+        ],
+        "examples": [
+          "Matt Morano",
+          "Stin-Niels Musche"
+        ]
+      },
+      {
+        "name": "Author",
+        "description": "An individual who writes about hypnosis and its applications",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the author"
+          },
+          {
+            "name": "published_works",
+            "type": "text",
+            "description": "The published works of the author"
+          }
+        ],
+        "examples": [
+          "Dave Elman",
+          "Ines Simpson"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "A generic entity that can be any person",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "The full name of the person"
+          }
+        ],
+        "examples": [
+          "John Doe",
+          "Jane Smith"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_WITH",
+        "description": "A relationship between a hypnotist and a client",
+        "source_targets": [
+          {
+            "source": "Hypnotist",
+            "target": "Client"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "TRAINS",
+        "description": "A relationship between a trainer and a student",
+        "source_targets": [
+          {
+            "source": "Trainer",
+            "target": "Student"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "PRACTICES_AT",
+        "description": "A relationship between a practitioner and an organization",
+        "source_targets": [
+          {
+            "source": "Practitioner",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WRITES_ABOUT",
+        "description": "A relationship between an author and a topic",
+        "source_targets": [
+          {
+            "source": "Author",
+            "target": "Topic"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "STUDIES_WITH",
+        "description": "A relationship between a student and a trainer",
+        "source_targets": [
+          {
+            "source": "Student",
+            "target": "Trainer"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "A relationship between an employee and an organization",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "The text discusses the Simpson Protocol, a holistic approach to hypnosis that involves working with the Superconscious mind to achieve lasting and profound outcomes. The protocol is designed to be simple, fast, and non-obtrusive, and allows the client to take charge of their own processes. The text also discusses the history of hypnosis, the development of the Simpson Protocol, and its applications in various fields.",
+  "graph_id": "mirofish_e4ffeebf575c42b3",
+  "graph_build_task_id": "5cd1465d-190d-4c23-af06-2ee98f149aaa",
+  "simulation_requirement": "на чем основан протокол Симпсон, почему люди излечиваются ?",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null
+}

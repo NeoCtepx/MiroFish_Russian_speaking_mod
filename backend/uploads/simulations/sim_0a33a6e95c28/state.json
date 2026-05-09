@@ -1,0 +1,27 @@
+{
+  "simulation_id": "sim_0a33a6e95c28",
+  "project_id": "proj_5938e0709540",
+  "graph_id": "mirofish_e4ffeebf575c42b3",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "preparing",
+  "entities_count": 36,
+  "profiles_count": 0,
+  "entity_types": [
+    "Person",
+    "Student",
+    "Client",
+    "Author",
+    "Hypnotist",
+    "Organization",
+    "Practitioner"
+  ],
+  "config_generated": false,
+  "config_reasoning": "",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-09T18:40:55.972460",
+  "updated_at": "2026-05-09T18:40:57.747622",
+  "error": null
+}

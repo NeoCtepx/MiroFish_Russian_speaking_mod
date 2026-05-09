@@ -1,0 +1,25 @@
+{
+  "simulation_id": "sim_0a843b5cefe1",
+  "project_id": "proj_64e6a678fbd3",
+  "graph_id": "mirofish_9d5527889b244fec",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 39,
+  "profiles_count": 39,
+  "entity_types": [
+    "MediaOutlet",
+    "Organization",
+    "Yogi",
+    "Person",
+    "Researcher"
+  ],
+  "config_generated": true,
+  "config_reasoning": "Time Config: 针对该事件的时间配置说明，根据模拟场景推断目标用户群体所在时区和作息习惯，按照东八区（UTC+8）的参考示例配置 | Event Config: The initial posts are designed to spark a nuanced and multifaceted discussion about Kundalini yoga, its benefits and risks, and the controversy surrounding its founder and the 3HO organization. By representing different perspectives and interests, we aim to create a rich and informative conversation that sheds light on the complexities of this topic. | Agent Config: 39 generated | Post Assignment: 4 posts assigned",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-08T21:20:24.146073",
+  "updated_at": "2026-05-09T03:02:05.131657",
+  "error": null
+}

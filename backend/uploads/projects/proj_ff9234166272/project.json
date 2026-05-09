@@ -1,0 +1,220 @@
+{
+  "project_id": "proj_ff9234166272",
+  "name": "Unnamed Project",
+  "status": "ontology_generated",
+  "created_at": "2026-05-08T20:29:51.357000",
+  "updated_at": "2026-05-08T20:38:07.571579",
+  "files": [
+    {
+      "filename": "kundalini_yoga_knowledge_base_ru.pdf",
+      "size": 361530
+    }
+  ],
+  "total_text_length": 99575,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Yogi",
+        "description": "瑜伽师",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "瑜伽师的全名"
+          }
+        ],
+        "examples": [
+          "Yogi Bhajan"
+        ]
+      },
+      {
+        "name": "Researcher",
+        "description": "研究者",
+        "attributes": [
+          {
+            "name": "research_field",
+            "type": "text",
+            "description": "研究领域"
+          }
+        ],
+        "examples": [
+          "Philip Deslippe"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "组织",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "组织名称"
+          }
+        ],
+        "examples": [
+          "3HO",
+          "KRI"
+        ]
+      },
+      {
+        "name": "University",
+        "description": "大学",
+        "attributes": [
+          {
+            "name": "university_name",
+            "type": "text",
+            "description": "大学名称"
+          }
+        ],
+        "examples": [
+          "哈佛大学"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "媒体机构",
+        "attributes": [
+          {
+            "name": "media_name",
+            "type": "text",
+            "description": "媒体名称"
+          }
+        ],
+        "examples": [
+          "Yoga Journal"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "政府机构",
+        "attributes": [
+          {
+            "name": "agency_name",
+            "type": "text",
+            "description": "机构名称"
+          }
+        ],
+        "examples": [
+          "卫生部"
+        ]
+      },
+      {
+        "name": "Company",
+        "description": "公司",
+        "attributes": [
+          {
+            "name": "company_name",
+            "type": "text",
+            "description": "公司名称"
+          }
+        ],
+        "examples": [
+          "阿里巴巴"
+        ]
+      },
+      {
+        "name": "Ngo",
+        "description": "非政府组织",
+        "attributes": [
+          {
+            "name": "ngo_name",
+            "type": "text",
+            "description": "非政府组织名称"
+          }
+        ],
+        "examples": [
+          "红十字会"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "个人",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "个人全名"
+          }
+        ],
+        "examples": [
+          "普通人"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "工作于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "STUDIES_AT",
+        "description": "就读于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "University"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "AFFILIATED_WITH",
+        "description": "隶属于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "代表",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "监管",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "报道",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本文主要分析了瑜伽和相关实体之间的关系，包括瑜伽师、研究者、组织、大学、媒体机构、政府机构、公司、非政府组织和个人等。",
+  "graph_id": null,
+  "graph_build_task_id": null,
+  "simulation_requirement": "Опасна ли кундалил йога и чем ?",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null
+}

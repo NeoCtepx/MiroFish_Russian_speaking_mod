@@ -1,0 +1,11 @@
+.git
+node_modules
+frontend/node_modules
+backend/.venv
+backend/uploads
+__pycache__
+*.pyc
+setup_mirofish_nvidia_docker_V*.ps1
+_mirofish_v*_core.py
+*.zip
+.gitignore

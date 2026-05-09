@@ -1,0 +1,21 @@
+{
+  "simulation_id": "sim_5beb461c865c",
+  "project_id": "proj_262252df4a41",
+  "graph_id": "mirofish_5f80b3a5b14a4f39",
+  "enable_twitter": true,
+  "enable_reddit": true,
+  "status": "running",
+  "entities_count": 6,
+  "profiles_count": 6,
+  "entity_types": [
+    "SyntheticPerson"
+  ],
+  "config_generated": true,
+  "config_reasoning": "v17 safe fallback used: zero profiles or config not generated",
+  "current_round": 0,
+  "twitter_status": "not_started",
+  "reddit_status": "not_started",
+  "created_at": "2026-05-08T16:00:02.619395",
+  "updated_at": "2026-05-08T16:00:17.194915",
+  "error": null
+}

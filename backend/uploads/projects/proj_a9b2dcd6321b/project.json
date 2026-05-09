@@ -1,0 +1,293 @@
+{
+  "project_id": "proj_a9b2dcd6321b",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-08T18:26:05.077199",
+  "updated_at": "2026-05-08T18:26:26.183748",
+  "files": [
+    {
+      "filename": "Zapros.txt",
+      "size": 84
+    }
+  ],
+  "total_text_length": 67,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "PublicFigure",
+        "description": "A visible person who can influence public discussion.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Public role"
+          }
+        ],
+        "examples": [
+          "public speaker",
+          "known author"
+        ]
+      },
+      {
+        "name": "Official",
+        "description": "A public official or policy decision maker.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name"
+          },
+          {
+            "name": "position",
+            "type": "text",
+            "description": "Official position"
+          }
+        ],
+        "examples": [
+          "minister",
+          "regulator"
+        ]
+      },
+      {
+        "name": "Expert",
+        "description": "A specialist who comments on the topic.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name"
+          },
+          {
+            "name": "expertise",
+            "type": "text",
+            "description": "Area of expertise"
+          }
+        ],
+        "examples": [
+          "analyst",
+          "researcher"
+        ]
+      },
+      {
+        "name": "Customer",
+        "description": "A person affected as a buyer or user.",
+        "attributes": [
+          {
+            "name": "segment",
+            "type": "text",
+            "description": "Customer segment"
+          },
+          {
+            "name": "concern",
+            "type": "text",
+            "description": "Main concern"
+          }
+        ],
+        "examples": [
+          "new user",
+          "returning buyer"
+        ]
+      },
+      {
+        "name": "CommunityGroup",
+        "description": "A group of people sharing an interest or concern.",
+        "attributes": [
+          {
+            "name": "group_name",
+            "type": "text",
+            "description": "Group name"
+          },
+          {
+            "name": "interest",
+            "type": "text",
+            "description": "Shared interest"
+          }
+        ],
+        "examples": [
+          "fan group",
+          "local community"
+        ]
+      },
+      {
+        "name": "Company",
+        "description": "A business organization involved in the situation.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Company name"
+          },
+          {
+            "name": "industry",
+            "type": "text",
+            "description": "Industry"
+          }
+        ],
+        "examples": [
+          "vendor",
+          "platform company"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "A media source that publishes or amplifies information.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Outlet name"
+          },
+          {
+            "name": "channel",
+            "type": "text",
+            "description": "Media channel"
+          }
+        ],
+        "examples": [
+          "news site",
+          "blog"
+        ]
+      },
+      {
+        "name": "Platform",
+        "description": "A digital platform where interaction happens.",
+        "attributes": [
+          {
+            "name": "platform_name",
+            "type": "text",
+            "description": "Platform name"
+          },
+          {
+            "name": "platform_type",
+            "type": "text",
+            "description": "Platform type"
+          }
+        ],
+        "examples": [
+          "social network",
+          "marketplace"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "Any individual person not fitting other specific person types.",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "Full name"
+          },
+          {
+            "name": "role",
+            "type": "text",
+            "description": "Role or occupation"
+          }
+        ],
+        "examples": [
+          "ordinary citizen",
+          "anonymous user"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "Any organization not fitting other specific organization types.",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "Organization name"
+          },
+          {
+            "name": "org_type",
+            "type": "text",
+            "description": "Organization type"
+          }
+        ],
+        "examples": [
+          "small business",
+          "association"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "COMMENTS_ON",
+        "description": "One entity publicly comments on another entity or event.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "INFLUENCES",
+        "description": "One entity affects opinions or actions of another.",
+        "source_targets": [
+          {
+            "source": "PublicFigure",
+            "target": "CommunityGroup"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "A media outlet reports on an entity.",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "WORKS_FOR",
+        "description": "A person works for an organization.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "An entity represents another entity or group.",
+        "source_targets": [
+          {
+            "source": "Official",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "USES_PLATFORM",
+        "description": "An entity communicates or acts through a platform.",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Platform"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "Generic ontology fallback was used because the configured LLM did not return a parseable JSON object. Check backend logs and LLM credentials for quality.",
+  "graph_id": "mirofish_d14fb091781f48a0",
+  "graph_build_task_id": "b21fc170-60a0-4591-a76c-23ddb5813280",
+  "simulation_requirement": "почему вот так в природе происходит?",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null
+}

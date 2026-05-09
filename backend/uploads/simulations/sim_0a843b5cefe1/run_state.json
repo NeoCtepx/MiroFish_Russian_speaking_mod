@@ -1,0 +1,244 @@
+{
+  "simulation_id": "sim_0a843b5cefe1",
+  "runner_status": "completed",
+  "current_round": 72,
+  "total_rounds": 72,
+  "simulated_hours": 0,
+  "total_simulation_hours": 72,
+  "progress_percent": 100.0,
+  "twitter_current_round": 72,
+  "reddit_current_round": 72,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 8,
+  "reddit_actions_count": 8,
+  "total_actions_count": 16,
+  "started_at": "2026-05-09T03:02:05.107213",
+  "updated_at": "2026-05-09T03:08:29.217189",
+  "completed_at": "2026-05-09T03:53:13.666427",
+  "error": null,
+  "process_pid": 3221,
+  "recent_actions": [
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:27.776464",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "KRI",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "We take the allegations of abuse within our organization very seriously and are committed to creating a safe and supportive environment for all our members. We encourage anyone with concerns to come forward and report them to our authorities.",
+        "post_id": 4
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:27.774627",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "исследователей",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been researching the benefits of meditation and yoga for mental health, and I'm surprised to see how little attention is paid to the potential risks and side effects. Can anyone recommend some reputable sources on this topic?",
+        "post_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:27.772768",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Arthur Avalon",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "As a Sikh, I'm deeply concerned about the appropriation of our sacred traditions and symbols in Kundalini yoga. It's not just about the physical postures or breathing techniques, but about the cultural and spiritual context in which they are practiced.",
+        "post_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:27.770569",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "sikxskix authors",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been practicing Kundalini yoga for years and have experienced profound spiritual growth and healing. However, I've also heard some disturbing stories about Yogi Bhajan's behavior and the abuse that occurred within the 3HO organization. Can anyone shed some light on this?",
+        "post_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:19.067626",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "KRI",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "We take the allegations of abuse within our organization very seriously and are committed to creating a safe and supportive environment for all our members. We encourage anyone with concerns to come forward and report them to our authorities.",
+        "post_id": 4
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:19.065639",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "исследователей",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been researching the benefits of meditation and yoga for mental health, and I'm surprised to see how little attention is paid to the potential risks and side effects. Can anyone recommend some reputable sources on this topic?",
+        "post_id": 3
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:19.063667",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Arthur Avalon",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "As a Sikh, I'm deeply concerned about the appropriation of our sacred traditions and symbols in Kundalini yoga. It's not just about the physical postures or breathing techniques, but about the cultural and spiritual context in which they are practiced.",
+        "post_id": 2
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-09T03:08:19.061226",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "sikxskix authors",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been practicing Kundalini yoga for years and have experienced profound spiritual growth and healing. However, I've also heard some disturbing stories about Yogi Bhajan's behavior and the abuse that occurred within the 3HO organization. Can anyone shed some light on this?",
+        "post_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:05:00.171702",
+      "platform": "reddit",
+      "agent_id": 5,
+      "agent_name": "KRI",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "We take the allegations of abuse within our organization very seriously and are committed to creating a safe and supportive environment for all our members. We encourage anyone with concerns to come forward and report them to our authorities."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:05:00.170206",
+      "platform": "reddit",
+      "agent_id": 7,
+      "agent_name": "исследователей",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been researching the benefits of meditation and yoga for mental health, and I'm surprised to see how little attention is paid to the potential risks and side effects. Can anyone recommend some reputable sources on this topic?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:05:00.168674",
+      "platform": "reddit",
+      "agent_id": 4,
+      "agent_name": "Arthur Avalon",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "As a Sikh, I'm deeply concerned about the appropriation of our sacred traditions and symbols in Kundalini yoga. It's not just about the physical postures or breathing techniques, but about the cultural and spiritual context in which they are practiced."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:05:00.166881",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "sikxskix authors",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been practicing Kundalini yoga for years and have experienced profound spiritual growth and healing. However, I've also heard some disturbing stories about Yogi Bhajan's behavior and the abuse that occurred within the 3HO organization. Can anyone shed some light on this?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:04:59.971012",
+      "platform": "twitter",
+      "agent_id": 5,
+      "agent_name": "KRI",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "We take the allegations of abuse within our organization very seriously and are committed to creating a safe and supportive environment for all our members. We encourage anyone with concerns to come forward and report them to our authorities."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:04:59.969084",
+      "platform": "twitter",
+      "agent_id": 7,
+      "agent_name": "исследователей",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been researching the benefits of meditation and yoga for mental health, and I'm surprised to see how little attention is paid to the potential risks and side effects. Can anyone recommend some reputable sources on this topic?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:04:59.967110",
+      "platform": "twitter",
+      "agent_id": 4,
+      "agent_name": "Arthur Avalon",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "As a Sikh, I'm deeply concerned about the appropriation of our sacred traditions and symbols in Kundalini yoga. It's not just about the physical postures or breathing techniques, but about the cultural and spiritual context in which they are practiced."
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-09T03:04:59.964421",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "sikxskix authors",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "I've been practicing Kundalini yoga for years and have experienced profound spiritual growth and healing. However, I've also heard some disturbing stories about Yogi Bhajan's behavior and the abuse that occurred within the 3HO organization. Can anyone shed some light on this?"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}

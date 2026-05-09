@@ -1,0 +1,220 @@
+{
+  "project_id": "proj_64e6a678fbd3",
+  "name": "Unnamed Project",
+  "status": "graph_completed",
+  "created_at": "2026-05-08T20:34:52.357678",
+  "updated_at": "2026-05-08T20:50:32.716661",
+  "files": [
+    {
+      "filename": "kundalini_yoga_knowledge_base_ru.pdf",
+      "size": 361530
+    }
+  ],
+  "total_text_length": 99575,
+  "ontology": {
+    "entity_types": [
+      {
+        "name": "Yogi",
+        "description": "瑜伽师",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "瑜伽师的全名"
+          }
+        ],
+        "examples": [
+          "Yogi Bhajan"
+        ]
+      },
+      {
+        "name": "Researcher",
+        "description": "研究者",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "研究者的机构名称"
+          }
+        ],
+        "examples": [
+          "Philip Deslippe"
+        ]
+      },
+      {
+        "name": "Organization",
+        "description": "组织",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "组织名称"
+          }
+        ],
+        "examples": [
+          "3HO",
+          "KRI"
+        ]
+      },
+      {
+        "name": "University",
+        "description": "大学",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "大学名称"
+          }
+        ],
+        "examples": [
+          "哈佛大学"
+        ]
+      },
+      {
+        "name": "MediaOutlet",
+        "description": "媒体机构",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "媒体机构名称"
+          }
+        ],
+        "examples": [
+          "Yoga Journal"
+        ]
+      },
+      {
+        "name": "GovernmentAgency",
+        "description": "政府机构",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "政府机构名称"
+          }
+        ],
+        "examples": [
+          "卫生部"
+        ]
+      },
+      {
+        "name": "Company",
+        "description": "公司",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "公司名称"
+          }
+        ],
+        "examples": [
+          "阿里巴巴"
+        ]
+      },
+      {
+        "name": "Ngo",
+        "description": "非政府组织",
+        "attributes": [
+          {
+            "name": "org_name",
+            "type": "text",
+            "description": "非政府组织名称"
+          }
+        ],
+        "examples": [
+          "红十字会"
+        ]
+      },
+      {
+        "name": "Person",
+        "description": "个人",
+        "attributes": [
+          {
+            "name": "full_name",
+            "type": "text",
+            "description": "个人全名"
+          }
+        ],
+        "examples": [
+          "John Doe"
+        ]
+      }
+    ],
+    "edge_types": [
+      {
+        "name": "WORKS_FOR",
+        "description": "工作于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "STUDIES_AT",
+        "description": "就读于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "University"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "AFFILIATED_WITH",
+        "description": "隶属于",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPRESENTS",
+        "description": "代表",
+        "source_targets": [
+          {
+            "source": "Person",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REGULATES",
+        "description": "监管",
+        "source_targets": [
+          {
+            "source": "GovernmentAgency",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      },
+      {
+        "name": "REPORTS_ON",
+        "description": "报道",
+        "source_targets": [
+          {
+            "source": "MediaOutlet",
+            "target": "Organization"
+          }
+        ],
+        "attributes": []
+      }
+    ]
+  },
+  "analysis_summary": "本文主要分析了瑜伽和冥想的概念、历史和影响，包括瑜伽的起源、发展和流派，以及冥想的定义、类型和益处。同时，文中还提到了瑜伽和冥想在现代社会中的应用和研究，包括瑜伽在教育、医疗和心理学中的应用，以及冥想在减压、提高注意力和增强创造力方面的益处。",
+  "graph_id": "mirofish_9d5527889b244fec",
+  "graph_build_task_id": "3884290e-b5fc-4b80-8e27-ed588474f03c",
+  "simulation_requirement": "Опасна ли кундалил йога и чем ?",
+  "chunk_size": 500,
+  "chunk_overlap": 50,
+  "error": null
+}

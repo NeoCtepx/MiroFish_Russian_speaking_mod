@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+ENV DEBIAN_FRONTEND=noninteractive     TERM=dumb     APT_LISTCHANGES_FRONTEND=none     PYTHONUNBUFFERED=1     PIP_DISABLE_PIP_VERSION_CHECK=1
+
+WORKDIR /app
+
+RUN apt-get update     && apt-get install -y --no-install-recommends nodejs npm git curl ca-certificates     && rm -rf /var/lib/apt/lists/*
+
+RUN pip install uv
+
+COPY . .
+
+RUN npm install
+RUN cd frontend && npm install
+RUN cd backend && uv sync
+
+EXPOSE 3000 5001
+CMD ["npm", "run", "dev"]
+
+# Required by npm concurrently when it stops child processes.
+RUN apt-get update && apt-get install -y procps && rm -rf /var/lib/apt/lists/*

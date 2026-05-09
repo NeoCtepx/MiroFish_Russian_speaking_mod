@@ -1,0 +1,15 @@
+services:
+  mirofish:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    image: mirofish-nvidia-local:latest
+    container_name: mirofish-nvidia
+    env_file:
+      - .env
+    ports:
+      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:5001:5001"
+    restart: unless-stopped
+    volumes:
+      - ./backend/uploads:/app/backend/uploads

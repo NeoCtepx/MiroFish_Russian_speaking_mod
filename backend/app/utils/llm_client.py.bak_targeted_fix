@@ -1,0 +1,109 @@
+import json
+import re
+from typing import Optional, Dict, Any, List
+from openai import OpenAI
+from ..config import Config
+
+class LLMClient:
+    def __init__(self, api_key: Optional[str] = None, base_url: Optional[str] = None, model: Optional[str] = None):
+        self.api_key = api_key or Config.LLM_API_KEY
+        self.base_url = base_url or Config.LLM_BASE_URL
+        self.model = model or Config.LLM_MODEL_NAME
+        if not self.api_key:
+            raise ValueError('LLM_API_KEY is not configured')
+        self.client = OpenAI(api_key=self.api_key, base_url=self.base_url)
+
+    def chat(self, messages: List[Dict[str, str]], temperature: float = 0.7, max_tokens: int = 4096, response_format: Optional[Dict] = None, extra_body: Optional[Dict] = None) -> str:
+        kwargs = {
+            'model': self.model,
+            'messages': messages,
+            'temperature': temperature,
+            'max_tokens': max_tokens,
+        }
+        if response_format:
+            kwargs['response_format'] = response_format
+        if extra_body:
+            kwargs['extra_body'] = extra_body
+        response = self.client.chat.completions.create(**kwargs)
+        content = response.choices[0].message.content or ''
+        content = re.sub(r'<think>[\s\S]*?</think>', '', content).strip()
+        return content
+
+    def _json_prompt_messages(self, messages: List[Dict[str, str]]) -> List[Dict[str, str]]:
+        extra = {'role': 'system', 'content': 'Return only one valid JSON object. Do not use markdown. Do not include comments.'}
+        return list(messages) + [extra]
+
+    def _extract_json(self, text: str) -> Dict[str, Any]:
+        cleaned = (text or '').strip()
+        cleaned = re.sub(r'^```(?:json)?\s*', '', cleaned, flags=re.IGNORECASE).strip()
+        cleaned = re.sub(r'```$', '', cleaned).strip()
+        try:
+            return json.loads(cleaned)
+        except Exception:
+            pass
+        start_obj = cleaned.find('{')
+        start_arr = cleaned.find('[')
+        starts = [x for x in [start_obj, start_arr] if x >= 0]
+        if not starts:
+            raise ValueError('No JSON object found in LLM response: ' + cleaned[:1000])
+        start = min(starts)
+        opener = cleaned[start]
+        closer = '}' if opener == '{' else ']'
+        depth = 0
+        in_str = False
+        esc = False
+        for i in range(start, len(cleaned)):
+            ch = cleaned[i]
+            if in_str:
+                if esc:
+                    esc = False
+                elif ch == '\':
+                    esc = True
+                elif ch == '"':
+                    in_str = False
+                continue
+            if ch == '"':
+                in_str = True
+            elif ch == opener:
+                depth += 1
+            elif ch == closer:
+                depth -= 1
+                if depth == 0:
+                    return json.loads(cleaned[start:i+1])
+        raise ValueError('Could not parse JSON from LLM response: ' + cleaned[:1000])
+
+    def chat_json(self, messages: List[Dict[str, str]], temperature: float = 0.3, max_tokens: int = 4096) -> Dict[str, Any]:
+        errors = []
+        json_schema = {'type': 'object', 'additionalProperties': True}
+        is_nvidia = 'nvidia.com' in (self.base_url or '').lower() or 'integrate.api.nvidia.com' in (self.base_url or '').lower()
+        if is_nvidia:
+            try:
+                response = self.chat(
+                    messages=self._json_prompt_messages(messages),
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                    extra_body={'nvext': {'guided_json': json_schema}}
+                )
+                return self._extract_json(response)
+            except Exception as e:
+                errors.append('nvidia_guided_json: ' + str(e))
+        try:
+            response = self.chat(
+                messages=self._json_prompt_messages(messages),
+                temperature=temperature,
+                max_tokens=max_tokens
+            )
+            return self._extract_json(response)
+        except Exception as e:
+            errors.append('plain_json_prompt: ' + str(e))
+        try:
+            response = self.chat(
+                messages=messages,
+                temperature=temperature,
+                max_tokens=max_tokens,
+                response_format={'type': 'json_object'}
+            )
+            return self._extract_json(response)
+        except Exception as e:
+            errors.append('json_object: ' + str(e))
+        raise ValueError('LLM JSON parse failed. Attempts: ' + ' | '.join(errors))

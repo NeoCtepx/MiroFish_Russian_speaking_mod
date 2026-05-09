@@ -1,0 +1,82 @@
+{
+  "simulation_id": "sim_2ac8c5dc6bdf",
+  "runner_status": "completed",
+  "current_round": 24,
+  "total_rounds": 24,
+  "simulated_hours": 0,
+  "total_simulation_hours": 24,
+  "progress_percent": 100.0,
+  "twitter_current_round": 24,
+  "reddit_current_round": 24,
+  "twitter_simulated_hours": 0,
+  "reddit_simulated_hours": 0,
+  "twitter_running": false,
+  "reddit_running": false,
+  "twitter_completed": true,
+  "reddit_completed": true,
+  "twitter_actions_count": 2,
+  "reddit_actions_count": 2,
+  "total_actions_count": 4,
+  "started_at": "2026-05-08T18:26:40.075504",
+  "updated_at": "2026-05-08T18:32:15.926269",
+  "completed_at": "2026-05-08T18:32:27.993340",
+  "error": null,
+  "process_pid": 175,
+  "recent_actions": [
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-08T18:32:15.402717",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Analyst 1",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "почему вот так в природе происходит?",
+        "post_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 9,
+      "timestamp": "2026-05-08T18:32:15.435617",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "Analyst 1",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "почему вот так в природе происходит?",
+        "post_id": 1
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-08T18:29:02.287516",
+      "platform": "reddit",
+      "agent_id": 0,
+      "agent_name": "Analyst 1",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "почему вот так в природе происходит?"
+      },
+      "result": null,
+      "success": true
+    },
+    {
+      "round_num": 0,
+      "timestamp": "2026-05-08T18:29:02.229047",
+      "platform": "twitter",
+      "agent_id": 0,
+      "agent_name": "Analyst 1",
+      "action_type": "CREATE_POST",
+      "action_args": {
+        "content": "почему вот так в природе происходит?"
+      },
+      "result": null,
+      "success": true
+    }
+  ],
+  "rounds_count": 0
+}
